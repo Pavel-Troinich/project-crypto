@@ -1,0 +1,105 @@
+.modal {
+  max-width: 688px;
+  width: 100%;
+  margin: 40px 0;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: default;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  white-space: normal;
+}
+
+.modal_open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__container {
+  position: relative;  
+  border-radius: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+  padding: 20px 20px 45px;
+}
+
+.modal__title {
+  max-width: 400px;
+  margin: 0 auto 20px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #55C2FF;
+}
+
+.modal__person {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  margin-bottom: 27px;
+}
+
+.modal__label {
+  flex-grow: 1;
+  color: #858585;
+  font-size: 12px;
+  font-family: IBM Plex Sans;
+  font-weight: 300;
+}
+
+.modal__input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid #68B7FF;
+  background: #FFF;
+}
+
+.modal__register {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: #55C2FF;
+  color: #ffffff;
+  font-size: 14px;  
+  font-weight: 500; 
+  line-height: 17px;
+  padding: 11px 41px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: transparent;
+  color: #55C2FF;
+}
+
+@media (max-width: 480px) {
+  .modal__container {
+    padding: 20px 20px 36px;
+  }
+
+  .modal__title {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 auto 10px;
+  }
+
+  .modal__person {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal__close {
+    top: -34px;
+    right: 0;
+  }
+}
